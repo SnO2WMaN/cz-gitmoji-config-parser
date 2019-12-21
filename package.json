@@ -1,10 +1,25 @@
 {
   "name": "cz-gitmoji-config-parser",
-  "dependencies": {},
+  "description": "Config parser for customizable gitmoji cli",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
+  "homepage": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser",
+  "bugs": {
+    "url": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser/issues"
+  },
+  "repository": {
+    "directory": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "SnO2WMaN",
+    "email": "sno2wman.official@gmail.com",
+    "url": "https://sno2wman.dev"
+  },
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "@sno2wman/eslint-config": "^1.0.3",
     "@sno2wman/eslint-config-typescript": "^1.0.2",
