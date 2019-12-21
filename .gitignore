@@ -3,6 +3,10 @@ node_modules/
 dist/
 lib/
 
+coverage/
+
 .env
 *.log
 *.cache
+
+.nyc_output/

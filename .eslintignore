@@ -3,4 +3,7 @@ node_modules/
 dist/
 lib/
 
+coverage/
 snapshots/
+
+.nyc_output/
