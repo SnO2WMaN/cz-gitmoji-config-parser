@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "lib": ["ESNext"],
     "strict": true,
-    "noEmit": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
-    "sourceRoot": "src"
-  }
+    "sourceRoot": "src",
+    "outDir": "lib",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "exclude": ["lib"]
 }

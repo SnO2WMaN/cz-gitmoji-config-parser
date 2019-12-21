@@ -1,16 +1,33 @@
 {
   "name": "cz-gitmoji-config-parser",
   "dependencies": {},
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@sno2wman/eslint-config": "^1.0.3",
     "@sno2wman/eslint-config-typescript": "^1.0.2",
     "@sno2wman/gitmoji-preset": "^1.0.2",
     "@sno2wman/prettier-config": "^1.0.2",
+    "ava": "^2.4.0",
     "concurrently": "^5.0.0",
+    "cpx": "^1.5.0",
     "eslint": "^6.8.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "lint": "eslint src . --ext .js,.ts --fix",
+    "test": "ava",
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "postbuild": "cpx 'lib/src/*' lib && rimraf lib/{src,test}"
   }
 }
