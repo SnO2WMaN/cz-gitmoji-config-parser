@@ -1,17 +1,13 @@
 {
   "include": [
-    "src/**/*.ts"
+    "src"
   ],
   "extension": [
     ".ts"
   ],
-  "require": [
-    "ts-node/register"
-  ],
   "reporter": [
     "text",
     "text-summary",
-    "html"
-  ],
-  "sourceMap": true
+    "lcov"
+  ]
 }
