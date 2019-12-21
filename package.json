@@ -1,0 +1,16 @@
+{
+  "name": "cz-gitmoji-config-parser",
+  "dependencies": {},
+  "devDependencies": {
+    "@sno2wman/eslint-config": "^1.0.3",
+    "@sno2wman/eslint-config-typescript": "^1.0.1",
+    "@sno2wman/gitmoji-preset": "^1.0.2",
+    "@sno2wman/prettier-config": "^1.0.2",
+    "concurrently": "^5.0.0",
+    "eslint": "^6.8.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  }
+}
