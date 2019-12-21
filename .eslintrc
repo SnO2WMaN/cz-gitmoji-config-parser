@@ -1,6 +1,5 @@
 {
   "root": true,
-  "env": { "browser": true },
   "extends": [
     "@sno2wman/eslint-config-typescript",
     "@sno2wman/eslint-config/+ava"
@@ -9,7 +8,10 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "@typescript-eslint/generic-type-naming": 0,
-    "@typescript-eslint/consistent-type-definitions": [2, "interface"]
+    "import/extensions": 0,
+    "unicorn/filename-case": [
+      2,
+      { "cases": { "pascalCase": true, "camelCase": true } }
+    ]
   }
 }
