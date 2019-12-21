@@ -11,6 +11,7 @@
     "@sno2wman/gitmoji-preset": "^1.0.2",
     "@sno2wman/prettier-config": "^1.0.2",
     "ava": "^2.4.0",
+    "codecov": "^3.6.1",
     "concurrently": "^5.0.0",
     "cpx": "^1.5.0",
     "eslint": "^6.8.0",
