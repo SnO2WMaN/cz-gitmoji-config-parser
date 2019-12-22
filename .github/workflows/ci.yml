@@ -18,6 +18,8 @@ jobs:
           export PATH="$HOME/.yarn/bin:$PATH"
       - name: Install dependencies
         run: yarn --frozen-lockfile
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Lint
         run: npm run lint
         env:
