@@ -47,6 +47,7 @@
     "test": "nyc ava",
     "prebuild": "rimraf lib",
     "build": "tsc",
-    "postbuild": "cpx 'lib/src/*' lib && rimraf lib/{src,test}"
+    "postbuild": "cpx 'lib/src/*' lib && rimraf lib/{src,test}",
+    "postversion": "git push origin --tags"
   }
 }
