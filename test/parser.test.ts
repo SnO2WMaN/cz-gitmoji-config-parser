@@ -4,6 +4,11 @@ import parser from '~/index'
 
 const json = {
   version: 2,
+  options: {
+    emojiFormat: 'emoji',
+    autoAdd: false,
+    signedCommit: false
+  },
   gitmojis: [
     {
       emoji: '✨',
@@ -41,6 +46,39 @@ const json = {
     }
   ]
 }
+
+test('test options.emojiFormat', t => {
+  const config = parser(JSON.stringify(json))
+  t.snapshot(config.emojiFormat)
+  t.throws(() =>
+    parser({
+      version: 2,
+      options: { emojiFormat: 'error' }
+    })
+  )
+})
+
+test('test options.signedCommit', t => {
+  const config = parser(JSON.stringify(json))
+  t.snapshot(config.signedCommit)
+  t.throws(() =>
+    parser({
+      version: 2,
+      options: { signedCommit: 1 }
+    })
+  )
+})
+
+test('test options.autoAdd', t => {
+  const config = parser(JSON.stringify(json))
+  t.snapshot(config.autoAdd)
+  t.throws(() =>
+    parser({
+      version: 2,
+      options: { autoAdd: 1 }
+    })
+  )
+})
 
 test('test list', t => {
   const config = parser(JSON.stringify(json))
