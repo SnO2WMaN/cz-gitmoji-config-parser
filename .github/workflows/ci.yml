@@ -34,3 +34,8 @@ jobs:
         run: npx codecov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Publish
+        run: npm publish
+        if: contains(github.ref, 'tags/v')
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
