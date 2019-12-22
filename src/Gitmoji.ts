@@ -65,7 +65,7 @@ export default class Gitmoji {
       emoji: this.emoji,
       name: this.name,
       description: this.description,
-      tags: this.tags,
+      tags: this.tags.sort((A, B) => A.localeCompare(B)),
       scopes: this.scopes
         .sort(({ name: A, name: B }) => A.localeCompare(B))
         .map(({ name, description }) => ({
