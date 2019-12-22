@@ -90,3 +90,9 @@ test('test search', t => {
   t.snapshot(config.search('feat'))
   t.snapshot(config.search('nothing'))
 })
+
+test('test getByName', t => {
+  const config = parser(JSON.stringify(json))
+  t.snapshot(config.getByName('construction_worker'))
+  t.throws(() => config.getByName('nothing'))
+})
