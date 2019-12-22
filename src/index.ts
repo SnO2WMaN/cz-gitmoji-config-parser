@@ -1,7 +1,7 @@
 import Gitmoji from './Gitmoji'
 import GitmojiScope from './GitmojiScope'
 
-class GitmojiConfig {
+export class GitmojiConfig {
   public readonly gitmojis: Array<Gitmoji>
 
   public readonly autoAdd: boolean
