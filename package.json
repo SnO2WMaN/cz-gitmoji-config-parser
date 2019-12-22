@@ -2,6 +2,7 @@
   "name": "cz-gitmoji-config-parser",
   "description": "Config parser for customizable gitmoji cli",
   "main": "lib/index.js",
+  "version": "0.0.0",
   "files": [
     "lib"
   ],
