@@ -66,16 +66,7 @@ export class GitmojiConfig {
 
   public list(
     gitmojis?: Array<Gitmoji>
-  ): Array<{
-    emoji: string
-    name: string
-    description: string
-    tags: Array<string>
-    scopes: Array<{
-      name: string
-      description: string
-    }>
-  }> {
+  ): Array<ReturnType<Gitmoji['details']>> {
     return (gitmojis ?? this.gitmojis)
       .sort(({ order: A }, { order: B }) => A - B)
       .map(gitmoji => gitmoji.details())
@@ -83,6 +74,14 @@ export class GitmojiConfig {
 
   public search(query: string): ReturnType<GitmojiConfig['list']> {
     return this.list(this.gitmojis.filter(gitmoji => gitmoji.search(query)))
+  }
+
+  public getByName(name: string): ReturnType<Gitmoji['details']> {
+    const detail = this.gitmojis
+      .find(gitmoji => gitmoji.name === name)
+      ?.details()
+    if (detail) return detail
+    throw new Error(`"${name}" is not included in the configuration file.`)
   }
 }
 
