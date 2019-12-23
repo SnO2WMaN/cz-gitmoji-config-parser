@@ -46,7 +46,7 @@ export default class Gitmoji {
 
   public search(query: string): boolean {
     return (
-      this.tags.filter(tag => tag.toLowerCase().includes(query.toLowerCase()))
+      this.tags.filter(tag => tag.toLowerCase().startsWith(query.toLowerCase()))
         .length > 0
     )
   }
