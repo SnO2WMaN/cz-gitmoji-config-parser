@@ -148,6 +148,8 @@ test('test list', t => {
 test('test search', t => {
   const config = parser(JSON.stringify(json))
   t.snapshot(config.search('feat'))
+  t.snapshot(config.search('eat'))
+  t.snapshot(config.search('docs'))
   t.snapshot(config.search('nothing'))
 })
 
