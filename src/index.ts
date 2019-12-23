@@ -67,9 +67,7 @@ export class GitmojiConfig {
   public list(
     gitmojis?: Array<Gitmoji>
   ): Array<ReturnType<Gitmoji['details']>> {
-    return (gitmojis ?? this.gitmojis)
-      .sort(({ order: A }, { order: B }) => (A === 0 && B === 0 ? 1 : A - B))
-      .map(gitmoji => gitmoji.details())
+    return (gitmojis ?? this.gitmojis).map(gitmoji => gitmoji.details())
   }
 
   public search(query: string): ReturnType<GitmojiConfig['list']> {
