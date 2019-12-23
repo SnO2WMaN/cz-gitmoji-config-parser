@@ -17,20 +17,22 @@ const json = {
       tags: ['feat']
     },
     {
-      emoji: '👷',
-      description: 'Maintain infrastructure.',
-      name: 'construction_worker',
-      tags: ['infra', 'ci'],
-      scopes: [
-        {
-          name: 'renovate',
-          description: 'About Renovate Bot'
-        },
-        {
-          name: 'github actions',
-          description: 'About Github Action'
-        }
-      ]
+      emoji: '👍',
+      description: 'Improve features.',
+      name: 'thumbsup',
+      tags: ['improve', 'update']
+    },
+    {
+      emoji: '🐛',
+      description: 'Fix bugs.',
+      name: 'bug',
+      tags: ['bug', 'fix']
+    },
+    {
+      emoji: '🚑',
+      description: 'Create a hotfix.',
+      name: 'ambulance',
+      tags: ['bug', 'fix', 'hotfix']
     },
     {
       emoji: '🔧',
@@ -43,6 +45,64 @@ const json = {
           description: 'About ESLint'
         }
       ]
+    },
+    {
+      emoji: '🚨',
+      description: 'Add/Update tests.',
+      name: 'warning',
+      tags: ['test'],
+      scopes: [
+        {
+          name: 'snapshot',
+          description: 'About snapshot'
+        }
+      ]
+    },
+    {
+      emoji: '📖',
+      description: 'Write docs.',
+      name: 'open_book',
+      tags: ['docs', 'readme']
+    },
+    {
+      emoji: '📄',
+      description: 'Attach a license.',
+      name: 'page_facing_up',
+      tags: ['license']
+    },
+    {
+      emoji: '🔖',
+      description: 'Release.',
+      name: 'bookmark',
+      tags: ['release', 'version']
+    },
+    {
+      emoji: '👷',
+      description: 'Maintain infrastructure.',
+      name: 'construction_worker',
+      tags: ['infra', 'ci'],
+      scopes: [
+        {
+          name: 'renovate',
+          description: 'About Renovate Bot'
+        },
+        {
+          name: 'github actions',
+          description: 'About Github Actions'
+        }
+      ]
+    },
+    {
+      emoji: '👥',
+      description: 'Add a contributor.',
+      name: 'busts_in_silhouette',
+      tags: ['contributor']
+    },
+    {
+      emoji: '🎉',
+      description: 'Init.',
+      name: 'tada',
+      tags: ['init']
     }
   ]
 }
