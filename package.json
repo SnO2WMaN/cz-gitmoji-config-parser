@@ -7,12 +7,12 @@
     "lib"
   ],
   "types": "lib/index.d.ts",
-  "homepage": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser",
+  "homepage": "https://github.com/SnO2WMaN/customizable-gitmoji-config-parser",
   "bugs": {
-    "url": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser/issues"
+    "url": "https://github.com/SnO2WMaN/customizable-gitmoji-config-parser/issues"
   },
   "repository": {
-    "directory": "https://github.com/SnO2WMaN/cz-gitmoji-config-parser.git",
+    "directory": "https://github.com/SnO2WMaN/customizable-gitmoji-config-parser.git",
     "type": "git"
   },
   "author": {
